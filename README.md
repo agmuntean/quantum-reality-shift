@@ -14,19 +14,129 @@ It works through three layers:
 
 ## What You Need
 
-- **[Obsidian](https://obsidian.md)** (free) — where your files live. You'll browse entries, foundation docs, and monthly summaries here.
-- **[Cowork](https://cowork.com)** — the AI layer that runs the system. Open this folder in Cowork to start.
-- **~60 minutes** for first-time setup (4 steps, can be spread across sessions). ~15 min/day after that.
+| Tool | What it does | Cost |
+|------|-------------|------|
+| [Obsidian](https://obsidian.md) | Where your files live. You browse entries, foundation docs, and monthly summaries here. | Free |
+| [Claude Desktop](https://claude.ai/download) | The AI that runs the system. You'll use its Cowork mode. | $20/mo (Pro plan) |
+| A speech-to-text app | Optional but recommended — lets you voice-journal instead of typing. See [Speech-to-Text Options](#speech-to-text-options) below. | Varies |
 
-## How It Works (Cowork)
+**Time:** ~60 minutes for first-time setup (can be spread across sessions). ~15 min/day after that.
 
-This system runs entirely through **Cowork** — no technical setup needed. Everything lives as markdown files in this folder.
+## Installation — Mac
 
-### First Time Setup
+### Step 1: Download Quantum Reality Shift
 
-Open this folder in Cowork and say **"set up"** or **"get started"** to begin.
+You don't need to know Git. Just download the files:
 
-Claude walks you through 4 steps. Each step is a guided conversation — you talk, Claude creates the file.
+1. On this page, click the green **Code** button (near the top of the file list)
+2. Click **Download ZIP**
+3. Open your Downloads folder and double-click the `.zip` file to unzip it
+4. Move the unzipped `Quantum_Reality_Shift` folder to your **Documents** folder
+
+> **Avoid putting it in iCloud Drive.** iCloud can offload files from your disk, which breaks Obsidian. If your Documents folder syncs to iCloud, go to System Settings > Apple ID > iCloud > iCloud Drive and turn off "Desktop & Documents Folders," or use a different local-only folder.
+
+### Step 2: Install Obsidian
+
+1. Download Obsidian from [obsidian.md](https://obsidian.md) (free)
+2. Open Obsidian
+3. Click **Open folder as vault**
+4. Select the `Quantum_Reality_Shift` folder you moved to Documents
+
+You can now browse all your journal files here. Obsidian is your reading/browsing layer — the AI work happens in Claude Desktop.
+
+### Step 3: Install Claude Desktop
+
+1. Download Claude Desktop from [claude.ai/download](https://claude.ai/download)
+2. Install and sign in with your Anthropic account
+3. You need a **Claude Pro subscription** ($20/mo) to use Cowork mode
+
+### Step 4: Open in Cowork
+
+1. In Claude Desktop, switch to **Cowork** mode (look for the mode toggle at the top of the app)
+2. Select the `Quantum_Reality_Shift` folder as your project folder
+3. Say **"set up"** or **"get started"** — Claude will walk you through the onboarding
+
+That's it. You're ready.
+
+### Step 5 (Optional): Install a Speech-to-Text App
+
+If you want to voice-journal (speak instead of type), install a speech-to-text app. [SuperWhisper](https://superwhisper.com) is recommended — it transcribes locally on your device, so nothing leaves your machine.
+
+Other options: use the built-in **macOS Dictation** (System Settings > Keyboard > Dictation, press Fn twice to start) or see the full comparison in [Speech-to-Text Options](#speech-to-text-options) below.
+
+---
+
+## Installation — Windows
+
+### Step 1: Download Quantum Reality Shift
+
+You don't need to know Git. Just download the files:
+
+1. On this page, click the green **Code** button (near the top of the file list)
+2. Click **Download ZIP**
+3. Open your Downloads folder, right-click the `.zip` file, and select **Extract All...**
+4. Move the unzipped `Quantum_Reality_Shift` folder to your **Documents** folder
+
+> **Avoid putting it in OneDrive, Google Drive, or Dropbox.** Cloud sync can offload files from your disk, which breaks Obsidian. If your Documents folder syncs to OneDrive, go to OneDrive settings > Manage backup and turn off Documents folder backup, or use a different local-only folder like `C:\Projects\`.
+
+### Step 2: Install Obsidian
+
+1. Download Obsidian from [obsidian.md](https://obsidian.md) (free)
+2. Open Obsidian
+3. Click **Open folder as vault**
+4. Select the `Quantum_Reality_Shift` folder you moved to Documents
+
+You can now browse all your journal files here. Obsidian is your reading/browsing layer — the AI work happens in Claude Desktop.
+
+### Step 3: Install Claude Desktop
+
+1. Download Claude Desktop from [claude.ai/download](https://claude.ai/download)
+2. Install and sign in with your Anthropic account
+3. You need a **Claude Pro subscription** ($20/mo) to use Cowork mode
+
+### Step 4: Open in Cowork
+
+1. In Claude Desktop, switch to **Cowork** mode (look for the mode toggle at the top of the app)
+2. Select the `Quantum_Reality_Shift` folder as your project folder
+3. Say **"set up"** or **"get started"** — Claude will walk you through the onboarding
+
+That's it. You're ready.
+
+### Step 5 (Optional): Install a Speech-to-Text App
+
+If you want to voice-journal (speak instead of type), install a speech-to-text app. The simplest free option is the built-in **Windows Voice Typing** — press **Win+H** in any text field (requires internet).
+
+For local/offline transcription, [SuperWhisper](https://superwhisper.com) is available on Windows in beta. See the full comparison in [Speech-to-Text Options](#speech-to-text-options) below.
+
+#### SuperWhisper on Windows — Known Issue
+
+SuperWhisper on Windows may require the **Microsoft Visual C++ Redistributable** to be installed separately. If SuperWhisper won't launch or crashes on startup:
+
+1. Download the [Visual C++ Redistributable (x64)](https://aka.ms/vs/17/release/vc_redist.x64.exe) from Microsoft
+2. Run the installer and follow the prompts
+3. Restart your computer
+4. Try launching SuperWhisper again
+
+This is a one-time fix. You won't need to do it again.
+
+## Speech-to-Text Options
+
+You can use any app that lets you dictate text. Here are some options:
+
+| App | Price | Platform | Local? | Notes |
+|-----|-------|----------|--------|-------|
+| [SuperWhisper](https://superwhisper.com) | $8.49/mo or $250 lifetime | Mac, Windows (beta) | Yes | Fast, accurate, 100+ languages. See [Windows note](#superwhisper-on-windows--known-issue) above. |
+| [Wispr Flow](https://wisprflow.ai) | Free (2k words/wk) or $12/mo | Mac, Windows, iOS, Android | No (cloud) | Auto-edits output (removes filler words, adds punctuation). Has a privacy mode with zero data retention. |
+| macOS Dictation | Free (built-in) | Mac | Yes (Apple Silicon) | System Settings > Keyboard > Dictation. Press Fn twice to start. |
+| Windows Voice Typing | Free (built-in) | Windows | No (cloud) | Press **Win+H** in any text field. Requires internet. |
+| [Buzz](https://github.com/chidiwilliams/buzz) | Free (open source) | Mac, Windows, Linux | Yes | Built on OpenAI Whisper. Fully offline. |
+| [Whisper Notes](https://whispernotes.app) | $4.99 (one-time) | Mac, iOS | Yes | Simple, fast, Apple Silicon optimized. |
+
+**For privacy-conscious users:** SuperWhisper, macOS Dictation (on Apple Silicon), Buzz, and Whisper Notes all process audio locally — nothing is sent to the cloud. Wispr Flow processes audio in the cloud but offers a privacy mode with zero data retention.
+
+## First Time Setup (Onboarding)
+
+Once you've opened the folder in Cowork (Step 4 above), Claude walks you through 4 onboarding steps. Each step is a guided conversation — you talk, Claude creates the file.
 
 | Step | What happens | Time | Creates |
 |------|-------------|------|---------|
@@ -37,7 +147,7 @@ Claude walks you through 4 steps. Each step is a guided conversation — you tal
 
 You can pause between steps and pick up later — just say **"continue setup"** and Claude will detect where you left off.
 
-### Daily Use
+## Daily Use
 
 **One chat per day.** Morning and evening happen in the same conversation.
 
@@ -57,7 +167,7 @@ Just talk. About everything. What happened, how you felt, what worked, what didn
 - Evening-only is fine — if you skip the morning, Claude creates an entry from just the brain dump.
 - Morning-only doesn't create a file — the inventory stays in the chat until you do an evening dump.
 
-### Monthly Review
+## Monthly Review
 
 At the end of each month, say:
 
@@ -129,7 +239,11 @@ During setup, Step 4 generates `system/MY_CONTEXT.md` — a ~500 word summary of
 
 Quantum Reality Shift is free and open source. If it helps you, consider supporting its development:
 
-☕ [Buy Me a Coffee](https://buymeacoffee.com/moontown)
+[Buy Me a Coffee](https://buymeacoffee.com/moontown)
+
+## License
+
+This project is licensed under [CC BY 4.0](LICENSE.md).
 
 ## Disclaimer
 
