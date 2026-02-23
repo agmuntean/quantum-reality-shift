@@ -12,38 +12,50 @@ It works through three layers:
 - **Pattern recognition** — tracking the two forces inside you: your Builder (the part creating your new reality) and your Resistor (the part keeping you anchored to the old one)
 - **Monthly reviews** — synthesizing a month of data into clear evidence of identity shift, synchronicities, and progress toward your vision
 
+## What You Need
+
+- **[Obsidian](https://obsidian.md)** (free) — where your files live. You'll browse entries, foundation docs, and monthly summaries here.
+- **[Cowork](https://cowork.com)** — the AI layer that runs the system. Open this folder in Cowork to start.
+- **~60 minutes** for first-time setup (4 steps, can be spread across sessions). ~15 min/day after that.
+
 ## How It Works (Cowork)
 
 This system runs entirely through **Cowork** — no technical setup needed. Everything lives as markdown files in this folder.
 
 ### First Time Setup
 
-Open this folder in Cowork and say:
+Open this folder in Cowork and say: **"Help me set up my Quantum Reality Shift system."**
 
-> "Help me set up my Quantum Reality Shift system."
+Claude walks you through 4 steps. Each step is a guided conversation — you talk, Claude creates the file.
 
-Claude will read the onboarding guide and walk you through a conversation to build your personalized foundation:
+| Step | What happens | Time | Creates |
+|------|-------------|------|---------|
+| 1. Your Story | You share your backstory — what brought you here, what you're moving away from | ~15 min | `My_Foundation/My_Journey_Context.md` |
+| 2. Your Baseline | An honest snapshot of where you are right now across life domains | ~15 min | `My_Foundation/My_Baseline.md` |
+| 3. Your Vision | A vivid description of your life at the end of your timeline | ~15 min | `My_Foundation/My_Vision.md` + month folders |
+| 4. Customize Tracking | Configure specific patterns, relationships, or areas for special attention | ~10 min | `system/MY_CONTEXT.md` |
 
-1. **Your Journey Context** — your backstory and what brought you here
-2. **Your Baseline** — an honest snapshot of where you are right now
-3. **Your Vision** — a vivid description of your life at the end of your timeline
-4. **Your Custom Tracking** — specific relationships, patterns, or areas you want to pay special attention to
-
-This generates three personal documents and sets up your monthly entry folders.
+You can pause between steps and pick up later — just say **"continue setup"** and Claude will detect where you left off.
 
 ### Daily Use
 
-**Morning** — Start your day by telling Claude what you plan to do:
+**One chat per day.** Morning and evening happen in the same conversation.
+
+**Morning** — List your tasks for the day in whatever way feels natural:
 
 > "Morning inventory" or "Starting my day"
 
-Claude will categorize your tasks as Signal or Noise and check which force — Builder or Resistor — is driving your priorities.
+Claude classifies each task as Signal (moves transformation forward) or Noise (necessary maintenance), then checks whether the Builder or Resistor force is driving your priorities. You get a prioritized list and a force check. No file is created yet — this lives in the conversation.
 
-**Evening** — End your day with an unfiltered brain dump:
+**Evening** — Come back to the same chat and talk freely:
 
 > "Brain dump" or "Ending my day"
 
-Just talk. About everything. What happened, how you felt, what worked, what didn't. Claude processes it into a structured entry with themes, patterns, emotional tracking, and action items.
+Just talk. About everything. What happened, how you felt, what worked, what didn't. Claude combines your morning inventory and evening dump into a single structured entry file with themes, patterns, emotional tracking, plan-vs-reality comparison, and action items.
+
+**Edge cases:**
+- Evening-only is fine — if you skip the morning, Claude creates an entry from just the brain dump.
+- Morning-only doesn't create a file — the inventory stays in the chat until you do an evening dump.
 
 ### Monthly Review
 
@@ -101,14 +113,11 @@ Quantum_Reality_Shift/
 └── Monthly_Summaries/           ← Your monthly reviews
 ```
 
-## Getting Started
+## Your Data
 
-1. Open this folder in Cowork
-2. Say: **"Help me set up my Quantum Reality Shift system"**
-3. Answer Claude's questions honestly — this builds your personal foundation
-4. Start your first morning inventory or brain dump
+All your personal files (`My_Foundation/`, `Entries/`, `Monthly_Summaries/`) stay local and are gitignored — they never leave your machine.
 
-That's it. The system builds itself around you.
+During setup, Step 4 generates `system/MY_CONTEXT.md` — a ~500 word summary of your situation, goals, and tracking preferences. This is the only file Claude reads at the start of each daily session, so it doesn't need to re-read your entire foundation every time. Your full foundation files (`My_Journey_Context.md`, `My_Baseline.md`, `My_Vision.md`) are written once during onboarding and referenced through MY_CONTEXT.md going forward.
 
 ## Support This Project
 
