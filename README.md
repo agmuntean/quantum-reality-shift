@@ -24,7 +24,7 @@ This system runs entirely through **Cowork** — no technical setup needed. Ever
 
 ### First Time Setup
 
-Open this folder in Cowork and say: **"Help me set up my Quantum Reality Shift system."**
+Open this folder in Cowork and say **"set up"** or **"get started"** to begin.
 
 Claude walks you through 4 steps. Each step is a guided conversation — you talk, Claude creates the file.
 
@@ -61,7 +61,7 @@ Just talk. About everything. What happened, how you felt, what worked, what didn
 
 At the end of each month, say:
 
-> "Generate my monthly summary"
+> "Monthly summary" or "Month review"
 
 Claude reads all your entries and produces a comprehensive review: momentum tracking, Builder vs Resistor analysis, reality selection evidence, identity shift markers, and progress toward your vision.
 
@@ -79,7 +79,7 @@ Both are you. The system doesn't fight the Resistor — it makes it visible so y
 ### Two Types of Action
 
 - **Signal** — Directly moves your transformation forward (revenue, growth, creation, deep relationship work, health breakthroughs)
-- **Noise** — Necessary maintenance that doesn't move the needle (admin, organization, errands)
+- **Noise** — Necessary maintenance that doesn't move the needle (admin, errands, routine)
 
 There's no such thing as a "Resistor task." What actually happens is the Resistor *force* makes you do Noise when you should be doing Signal — or disguises avoidance as Signal work. You spend the day "preparing" instead of doing. It feels productive. Nothing moved.
 
@@ -100,6 +100,12 @@ Your internal state (consciousness, identity, emotional regulation) correlates w
 ```
 Quantum_Reality_Shift/
 ├── README.md                    ← You are here
+├── CLAUDE.md                    ← System instructions (auto-loaded by Cowork)
+│
+├── system/                      ← Claude's reference files
+│   ├── MY_CONTEXT.md            ← Only file read during daily use
+│   ├── onboarding/              ← Read once during setup
+│   └── templates/
 │
 ├── My_Foundation/               ← Your personal foundation (generated during onboarding)
 │   ├── My_Journey_Context.md
