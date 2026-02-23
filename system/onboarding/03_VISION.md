@@ -87,6 +87,8 @@ tags:
 3. **Create monthly entry folders** in `Entries/`:
    One folder per calendar month: `Month_01_[MonthName]/`, `Month_02_[MonthName]/`, etc.
 
+4. **Create the `Monthly_Summaries/` folder** if it doesn't already exist.
+
 4. Tell the user: "Step 3 is done — your vision is saved and your monthly folders are created. One more step: customizing the system. Say 'continue setup' or 'next step' whenever you're ready."
 
 ## Constraints
