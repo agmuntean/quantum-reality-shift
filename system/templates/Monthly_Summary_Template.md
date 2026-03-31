@@ -10,7 +10,7 @@ category: Monthly Reviews
 
 # [MONTH] [YEAR]: Month [#] — [THEME TITLE]
 
-**Timeline:** [Month Start] - [Month End], [Year] | **Days:** [Start]-[End] of [TOTAL]
+**Timeline:** [Month Start] - [Month End], [Year] | **Days:** [Start]-[End] of [TOTAL] | **Cycle:** [XX]
 **Completion:** [XX]% of journey to [VISION DATE]
 
 ---
@@ -37,7 +37,7 @@ Resistor: [VISUAL BAR]  [XX]%
 | [Domain 5] | **[STATUS]** | [Key milestone] |
 | Consciousness | **[STATUS]** | [Key milestone] |
 
-*Domains are populated from user's onboarding selections in `My_Foundation/My_Vision.md`*
+*Domains are populated from `system/MY_CONTEXT.md` (My Domains section)*
 
 ---
 
@@ -292,7 +292,7 @@ Resistor: [VISUAL BAR]  [XX]%
 
 ### Vision Progress Check
 
-**Target State** (from `My_Foundation/My_Vision.md`):
+**Target State** (from vision summary in `system/MY_CONTEXT.md`):
 [Brief summary of vision]
 
 **Current Status ([XX]% of timeline, Day [XX] of [TOTAL]):**
@@ -319,9 +319,9 @@ Resistor: [VISUAL BAR]  [XX]%
 
 ### Core Truth Deepening
 
-<!-- This section builds month over month. Each month adds to the chain. -->
+<!-- This section builds month over month within the current cycle. Each month adds to the chain. If this is a new cycle, start the chain fresh — reference the previous cycle's final insight as the starting point if available. -->
 
-**Month 1 Recognition:** "[First month's core realization]"
+**Month 1 Recognition:** "[First month's core realization — or previous cycle's final insight if Cycle 2+]"
 
 <!-- Add each subsequent month's deepening -->
 
@@ -331,7 +331,7 @@ Resistor: [VISUAL BAR]  [XX]%
 
 **Month 1:** [First month's question] — **Answer:** [Answer]
 
-<!-- Chain continues month over month -->
+<!-- Chain continues month over month. Resets with each new cycle. -->
 
 **Month [Next #] Question:** [New question]
 

@@ -19,6 +19,14 @@ Open with something like:
 
 ---
 
+## Language Detection
+
+**Do not ask the user what language they want.** Instead, detect it automatically from the language they've been speaking throughout onboarding (Steps 1-3). Whatever language they used in conversation is their language. Set it in MY_CONTEXT.md as `**Language:** [language]`.
+
+If for some reason the language is ambiguous (e.g., they switched between languages), confirm briefly: in their dominant language, say the equivalent of "I'll keep everything in [language] — good?" One sentence, not a whole step.
+
+---
+
 ## Part A: Special Tracking
 
 "The system tracks your general journey across all your domains. But sometimes there's one specific area that needs deeper, more careful documentation. For some people it's their relationship with a child. For others it's recovery from a specific pattern, building something from scratch, or healing a family dynamic."
@@ -44,6 +52,9 @@ Define:
 2. **Triggers** — what in a brain dump should activate this section (list specific keywords, situations, or themes)
 3. **What to capture** — the specific elements to document when triggered
 4. **Lens** — the key question the system should ask about this area (e.g., "Am I responding from the old identity or the new one?")
+
+### If they want a second tracking area:
+Support up to two. Use `## Special Tracking 1` and `## Special Tracking 2` in MY_CONTEXT.md, each with its own Name, Triggers, Capture, and Lens. Both will be checked independently during entry processing.
 
 ### If they don't have one:
 That's fine. Skip it. The system works without it. Can always be added later.
@@ -108,6 +119,8 @@ Condense everything from the three foundation docs + this conversation into this
 ```markdown
 # My Context
 
+**Language:** [Language]
+
 ## Who I Am
 [2-3 sentences: name if given, core identity, what they're transforming from/to]
 
@@ -135,7 +148,20 @@ Condense everything from the three foundation docs + this conversation into this
 [What aligned action looks like for them, 3-5 bullet points]
 
 ## Special Tracking
-[If configured:]
+[If one area configured:]
+**Name:** [Tracking name]
+**Triggers:** [Keyword/situation list]
+**Capture:** [What to document when triggered]
+**Lens:** [Key question]
+
+[If two areas configured, use numbered sections:]
+### Special Tracking 1
+**Name:** [Tracking name]
+**Triggers:** [Keyword/situation list]
+**Capture:** [What to document when triggered]
+**Lens:** [Key question]
+
+### Special Tracking 2
 **Name:** [Tracking name]
 **Triggers:** [Keyword/situation list]
 **Capture:** [What to document when triggered]

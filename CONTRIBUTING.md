@@ -29,11 +29,12 @@ Quantum_Reality_Shift/
 ├── FUNDING.yml                  ← Donation links
 │
 ├── system/                      ← Claude's reference files
-│   ├── onboarding/              ← Setup steps (read once)
+│   ├── onboarding/              ← Setup steps (read once) + transition
 │   │   ├── 01_STORY.md
 │   │   ├── 02_BASELINE.md
 │   │   ├── 03_VISION.md
-│   │   └── 04_CUSTOMIZE.md
+│   │   ├── 04_CUSTOMIZE.md
+│   │   └── 05_TRANSITION.md
 │   └── templates/
 │       └── Monthly_Summary_Template.md
 │
@@ -46,6 +47,7 @@ Quantum_Reality_Shift/
 
 - **CLAUDE.md** — Contains all prompts, templates, and workflow logic. This is the brain of the system. Changes here affect every user's daily experience.
 - **system/onboarding/** — The four-step setup flow. Each file is self-contained with instructions for Claude.
+- **system/onboarding/05_TRANSITION.md** — Handles cycle-to-cycle transitions. Reads previous monthly summaries, guides archive process, runs compressed onboarding.
 - **system/templates/Monthly_Summary_Template.md** — Structure for monthly reviews.
 - **system/MY_CONTEXT.md** — Generated per-user (gitignored). ~500 words, read every session.
 

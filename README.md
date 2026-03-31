@@ -1,3 +1,5 @@
+*English | [Español](README.es.md) | [Română](README.ro.md)*
+
 # Quantum Reality Shift System
 
 A consciousness-based transformation journaling system powered by AI. You do the thinking out loud — Claude does the structuring, tracking, and pattern recognition.
@@ -165,7 +167,7 @@ Just talk. About everything. What happened, how you felt, what worked, what didn
 
 **Edge cases:**
 - Evening-only is fine — if you skip the morning, Claude creates an entry from just the brain dump.
-- Morning-only doesn't create a file — the inventory stays in the chat until you do an evening dump.
+- Morning-only doesn't create a file — the inventory stays in the chat until you do an evening dump. If you don't come back, that morning's data isn't saved (by design — entries are anchored to the evening reflection).
 
 ## Monthly Review
 
@@ -174,6 +176,26 @@ At the end of each month, say:
 > "Monthly summary" or "Month review"
 
 Claude reads all your entries and produces a comprehensive review: momentum tracking, Builder vs Resistor analysis, reality selection evidence, identity shift markers, and progress toward your vision.
+
+**Timing is flexible** — end of month, a few days into the next month, whenever works for you.
+
+## Starting a New Cycle
+
+When you've completed your transformation timeline, you can start a fresh cycle that builds on everything you've learned — without starting from scratch.
+
+Say:
+
+> "New cycle" or "Start next cycle"
+
+Claude will:
+1. Synthesize your previous cycle's journey from your monthly summaries
+2. Automatically archive your entries, summaries, and foundation docs into a dated `Cycle_XX/` folder
+3. Run a compressed onboarding: auto-generated journey context, fresh baseline ratings, new vision and timeline
+4. Set up your new entry folders and update your context file
+
+Your previous cycle's entries and summaries stay fully browsable in Obsidian under a `Cycle_XX/` folder. Nothing is deleted — just organized.
+
+**Typical cycle length:** 3-12 months. There's no required length — transition when you feel a natural completion point.
 
 ## The Framework
 
@@ -214,19 +236,24 @@ Quantum_Reality_Shift/
 │
 ├── system/                      ← Claude's reference files
 │   ├── MY_CONTEXT.md            ← Only file read during daily use
-│   ├── onboarding/              ← Read once during setup
+│   ├── onboarding/              ← Read during setup or cycle transition
 │   └── templates/
 │
-├── My_Foundation/               ← Your personal foundation (generated during onboarding)
+├── My_Foundation/               ← Your personal foundation (current cycle)
 │   ├── My_Journey_Context.md
 │   ├── My_Baseline.md
 │   └── My_Vision.md
 │
-├── Entries/                     ← Your daily entries
+├── Entries/                     ← Your daily entries (current cycle)
 │   └── Month_XX_[Name]/
 │       └── Entry_YYYY-MM-DD.md
 │
-└── Monthly_Summaries/           ← Your monthly reviews
+├── Monthly_Summaries/           ← Your monthly reviews (current cycle)
+│
+└── Cycle_XX_[dates]/            ← Archived previous cycles
+    ├── Entries/
+    ├── Monthly_Summaries/
+    └── Foundation/               ← Includes archived MY_CONTEXT.md
 ```
 
 ## Your Data

@@ -85,7 +85,7 @@ tags:
 ```
 
 3. **Create monthly entry folders** in `Entries/`:
-   One folder per calendar month: `Month_01_[MonthName]/`, `Month_02_[MonthName]/`, etc.
+   One folder per calendar month from start to end date, numbered sequentially: `Month_01_[MonthName]/`, `Month_02_[MonthName]/`, etc. Month_01 is always the first month of the journey (even if starting mid-month), labeled with its calendar month name. Example: starting March 15 for 6 months → `Month_01_March/`, `Month_02_April/`, ..., `Month_06_August/`.
 
 4. **Create the `Monthly_Summaries/` folder** if it doesn't already exist.
 
