@@ -19,7 +19,7 @@ Funcționează pe trei niveluri:
 | Instrument | Ce face | Cost |
 |------------|---------|------|
 | [Obsidian](https://obsidian.md) | Aici locuiesc fișierele tale. Navighezi intrări, documente fundație și sumare lunare aici. | Gratuit |
-| [Claude Desktop](https://claude.ai/download) | AI-ul care rulează sistemul. Vei folosi modul Cowork. | $20/lună (planul Pro) |
+| [Claude Desktop](https://claude.ai/download) | AI-ul care rulează sistemul. Citește și scrie fișierele din folderul tău de jurnal. | $20/lună (planul Pro) |
 | O aplicație de speech-to-text | Opțional, dar recomandat — te lasă să jurnalizezi vocal în loc să tastezi. Vezi [Opțiuni Speech-to-Text](#opțiuni-speech-to-text) mai jos. | Variază |
 
 **Timp:** ~60 de minute pentru configurarea inițială (se poate distribui pe mai multe sesiuni). ~15 min/zi după aceea.
@@ -50,12 +50,12 @@ Acum poți naviga toate fișierele de jurnal aici. Obsidian este nivelul tău de
 
 1. Descarcă Claude Desktop de la [claude.ai/download](https://claude.ai/download)
 2. Instalează și autentifică-te cu contul tău Anthropic
-3. Ai nevoie de un abonament **Claude Pro** ($20/lună) pentru a folosi modul Cowork
+3. Ai nevoie de un plan Claude plătit (**Pro**, $20/lună, sau mai mare) pentru ca Claude să lucreze într-un folder de pe computerul tău
 
-### Pasul 4: Deschide în Cowork
+### Pasul 4: Dă-i lui Claude folderul
 
-1. În Claude Desktop, comută pe modul **Cowork** (caută comutatorul de mod în partea de sus a aplicației)
-2. Selectează folderul `Quantum_Reality_Shift` ca folder de proiect
+1. În Claude Desktop, apasă pe **Projects** în bara laterală din stânga, apasă **+**, alege **Use an existing folder** și selectează folderul `Quantum_Reality_Shift`
+2. Dă un nume proiectului și apasă **Create**, apoi deschide un chat nou în el
 3. Spune **„set up"** sau **„get started"** — Claude te va ghida prin onboarding
 
 Asta e tot. Ești gata.
@@ -65,6 +65,10 @@ Asta e tot. Ești gata.
 Dacă vrei să jurnalizezi vocal (să vorbești în loc să tastezi), instalează o aplicație de speech-to-text. [SuperWhisper](https://superwhisper.com) este recomandat — transcrie local pe dispozitivul tău, deci nimic nu părăsește mașina ta.
 
 Alte opțiuni: folosește **macOS Dictation** integrat (System Settings > Keyboard > Dictation, apasă Fn de două ori pentru a începe) sau vezi comparația completă în [Opțiuni Speech-to-Text](#opțiuni-speech-to-text) mai jos.
+
+### Alternativă: Claude Code
+
+Același folder funcționează neschimbat în [Claude Code](https://claude.com/claude-code) — în terminal sau în tab-ul Claude Code din aplicația desktop. Deschide acolo folderul `Quantum_Reality_Shift` și spune **„set up"**. Folosește aceleași fișiere și aceleași comenzi.
 
 ---
 
@@ -94,12 +98,12 @@ Acum poți naviga toate fișierele de jurnal aici. Obsidian este nivelul tău de
 
 1. Descarcă Claude Desktop de la [claude.ai/download](https://claude.ai/download)
 2. Instalează și autentifică-te cu contul tău Anthropic
-3. Ai nevoie de un abonament **Claude Pro** ($20/lună) pentru a folosi modul Cowork
+3. Ai nevoie de un plan Claude plătit (**Pro**, $20/lună, sau mai mare) pentru ca Claude să lucreze într-un folder de pe computerul tău
 
-### Pasul 4: Deschide în Cowork
+### Pasul 4: Dă-i lui Claude folderul
 
-1. În Claude Desktop, comută pe modul **Cowork** (caută comutatorul de mod în partea de sus a aplicației)
-2. Selectează folderul `Quantum_Reality_Shift` ca folder de proiect
+1. În Claude Desktop, apasă pe **Projects** în bara laterală din stânga, apasă **+**, alege **Use an existing folder** și selectează folderul `Quantum_Reality_Shift` (pe Windows, asigură-te mai întâi că ai cea mai nouă versiune de Claude pentru Windows — opțiunea de folder o cere)
+2. Dă un nume proiectului și apasă **Create**, apoi deschide un chat nou în el
 3. Spune **„set up"** sau **„get started"** — Claude te va ghida prin onboarding
 
 Asta e tot. Ești gata.
@@ -121,6 +125,10 @@ SuperWhisper pe Windows poate necesita instalarea separată a **Microsoft Visual
 
 Aceasta este o rezolvare unică. Nu va trebui să o faci din nou.
 
+### Alternativă: Claude Code
+
+Același folder funcționează neschimbat în [Claude Code](https://claude.com/claude-code) — în terminal sau în tab-ul Claude Code din aplicația desktop. Deschide acolo folderul `Quantum_Reality_Shift` și spune **„set up"**. Folosește aceleași fișiere și aceleași comenzi.
+
 ## Opțiuni Speech-to-Text
 
 Poți folosi orice aplicație care îți permite să dictezi text. Iată câteva opțiuni:
@@ -138,7 +146,7 @@ Poți folosi orice aplicație care îți permite să dictezi text. Iată câteva
 
 ## Configurare inițială (Onboarding)
 
-Odată ce ai deschis folderul în Cowork (Pasul 4 de mai sus), Claude te ghidează prin 4 pași de onboarding. Fiecare pas este o conversație ghidată — tu vorbești, Claude creează fișierul.
+Odată ce Claude are folderul tău (Pasul 4 de mai sus), Claude te ghidează prin 4 pași de onboarding. Fiecare pas este o conversație ghidată — tu vorbești, Claude creează fișierul.
 
 | Pas | Ce se întâmplă | Timp | Creează |
 |-----|----------------|------|---------|
@@ -152,6 +160,8 @@ Poți face pauză între pași și relua mai târziu — spune doar **„continu
 ## Utilizare zilnică
 
 **Un chat pe zi.** Dimineața și seara se întâmplă în aceeași conversație.
+
+Ține Claude Desktop deschis pe computerul unde se află folderul tău cât timp scrii în jurnal; Claude poate citi și scrie fișierele doar cât timp aplicația rulează.
 
 **Dimineața** — Listează-ți sarcinile pentru ziua respectivă în orice mod ți se pare natural:
 
@@ -232,7 +242,7 @@ Starea ta internă (conștiință, identitate, reglare emoțională) corelează 
 ```
 Quantum_Reality_Shift/
 ├── README.md                    ← Ești aici
-├── CLAUDE.md                    ← Instrucțiuni sistem (încărcate automat de Cowork)
+├── CLAUDE.md                    ← Instrucțiuni sistem (Claude citește automat acest fișier când deschide folderul)
 │
 ├── system/                      ← Fișierele de referință ale lui Claude
 │   ├── MY_CONTEXT.md            ← Singurul fișier citit în utilizarea zilnică
@@ -258,7 +268,7 @@ Quantum_Reality_Shift/
 
 ## Datele tale
 
-Toate fișierele tale personale (`My_Foundation/`, `Entries/`, `Monthly_Summaries/`) rămân locale și sunt ignorate de git — nu părăsesc niciodată mașina ta.
+Stocare: toate fișierele tale personale (`My_Foundation/`, `Entries/`, `Monthly_Summaries/`) stau în folderul de pe computerul tău și sunt ignorate de git, deci acest repo nu le salvează și nu le încarcă niciodată. Procesare: ce îi spui lui Claude și fișierele pe care le citește sunt procesate pe serverele Anthropic, conform [politicii de confidențialitate](https://www.anthropic.com/legal/privacy) și termenilor planului tău — pe Pro și Max, sarcinile pot rula în cloud.
 
 În timpul configurării, Pasul 4 generează `system/MY_CONTEXT.md` — un rezumat de ~500 de cuvinte al situației, obiectivelor și preferințelor tale de urmărire. Acesta este singurul fișier pe care Claude îl citește la începutul fiecărei sesiuni zilnice, astfel încât nu trebuie să recitească întreaga ta fundație de fiecare dată. Fișierele tale complete de fundație (`My_Journey_Context.md`, `My_Baseline.md`, `My_Vision.md`) sunt scrise o singură dată în timpul onboarding-ului și referite prin MY_CONTEXT.md ulterior.
 

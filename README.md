@@ -19,7 +19,7 @@ It works through three layers:
 | Tool | What it does | Cost |
 |------|-------------|------|
 | [Obsidian](https://obsidian.md) | Where your files live. You browse entries, foundation docs, and monthly summaries here. | Free |
-| [Claude Desktop](https://claude.ai/download) | The AI that runs the system. You'll use its Cowork mode. | $20/mo (Pro plan) |
+| [Claude Desktop](https://claude.ai/download) | The AI that runs the system. It reads and writes the files in your journal folder. | $20/mo (Pro plan) |
 | A speech-to-text app | Optional but recommended — lets you voice-journal instead of typing. See [Speech-to-Text Options](#speech-to-text-options) below. | Varies |
 
 **Time:** ~60 minutes for first-time setup (can be spread across sessions). ~15 min/day after that.
@@ -50,12 +50,12 @@ You can now browse all your journal files here. Obsidian is your reading/browsin
 
 1. Download Claude Desktop from [claude.ai/download](https://claude.ai/download)
 2. Install and sign in with your Anthropic account
-3. You need a **Claude Pro subscription** ($20/mo) to use Cowork mode
+3. You need a paid Claude plan (**Pro**, $20/mo, or higher) for Claude to work in a folder on your computer
 
-### Step 4: Open in Cowork
+### Step 4: Give Claude the folder
 
-1. In Claude Desktop, switch to **Cowork** mode (look for the mode toggle at the top of the app)
-2. Select the `Quantum_Reality_Shift` folder as your project folder
+1. In Claude Desktop, click **Projects** in the left sidebar, click **+**, choose **Use an existing folder**, and pick the `Quantum_Reality_Shift` folder
+2. Name the project and click **Create**, then start a new chat inside it
 3. Say **"set up"** or **"get started"** — Claude will walk you through the onboarding
 
 That's it. You're ready.
@@ -65,6 +65,10 @@ That's it. You're ready.
 If you want to voice-journal (speak instead of type), install a speech-to-text app. [SuperWhisper](https://superwhisper.com) is recommended — it transcribes locally on your device, so nothing leaves your machine.
 
 Other options: use the built-in **macOS Dictation** (System Settings > Keyboard > Dictation, press Fn twice to start) or see the full comparison in [Speech-to-Text Options](#speech-to-text-options) below.
+
+### Alternative: Claude Code
+
+The same folder works unchanged in [Claude Code](https://claude.com/claude-code) — in the terminal or the Claude Code tab of the desktop app. Open the `Quantum_Reality_Shift` folder there and say **"set up"**. It uses the same files and the same commands.
 
 ---
 
@@ -94,12 +98,12 @@ You can now browse all your journal files here. Obsidian is your reading/browsin
 
 1. Download Claude Desktop from [claude.ai/download](https://claude.ai/download)
 2. Install and sign in with your Anthropic account
-3. You need a **Claude Pro subscription** ($20/mo) to use Cowork mode
+3. You need a paid Claude plan (**Pro**, $20/mo, or higher) for Claude to work in a folder on your computer
 
-### Step 4: Open in Cowork
+### Step 4: Give Claude the folder
 
-1. In Claude Desktop, switch to **Cowork** mode (look for the mode toggle at the top of the app)
-2. Select the `Quantum_Reality_Shift` folder as your project folder
+1. In Claude Desktop, click **Projects** in the left sidebar, click **+**, choose **Use an existing folder**, and pick the `Quantum_Reality_Shift` folder (on Windows, make sure Claude for Windows is up to date first — the folder option needs the latest version)
+2. Name the project and click **Create**, then start a new chat inside it
 3. Say **"set up"** or **"get started"** — Claude will walk you through the onboarding
 
 That's it. You're ready.
@@ -121,6 +125,10 @@ SuperWhisper on Windows may require the **Microsoft Visual C++ Redistributable**
 
 This is a one-time fix. You won't need to do it again.
 
+### Alternative: Claude Code
+
+The same folder works unchanged in [Claude Code](https://claude.com/claude-code) — in the terminal or the Claude Code tab of the desktop app. Open the `Quantum_Reality_Shift` folder there and say **"set up"**. It uses the same files and the same commands.
+
 ## Speech-to-Text Options
 
 You can use any app that lets you dictate text. Here are some options:
@@ -138,7 +146,7 @@ You can use any app that lets you dictate text. Here are some options:
 
 ## First Time Setup (Onboarding)
 
-Once you've opened the folder in Cowork (Step 4 above), Claude walks you through 4 onboarding steps. Each step is a guided conversation — you talk, Claude creates the file.
+Once Claude has your folder (Step 4 above), Claude walks you through 4 onboarding steps. Each step is a guided conversation — you talk, Claude creates the file.
 
 | Step | What happens | Time | Creates |
 |------|-------------|------|---------|
@@ -152,6 +160,8 @@ You can pause between steps and pick up later — just say **"continue setup"** 
 ## Daily Use
 
 **One chat per day.** Morning and evening happen in the same conversation.
+
+Keep Claude Desktop open on the computer where your folder lives while you journal; Claude can only read and write your files while the app is running.
 
 **Morning** — List your tasks for the day in whatever way feels natural:
 
@@ -232,7 +242,7 @@ Your internal state (consciousness, identity, emotional regulation) correlates w
 ```
 Quantum_Reality_Shift/
 ├── README.md                    ← You are here
-├── CLAUDE.md                    ← System instructions (auto-loaded by Cowork)
+├── CLAUDE.md                    ← System instructions (Claude reads this file automatically when it opens the folder)
 │
 ├── system/                      ← Claude's reference files
 │   ├── MY_CONTEXT.md            ← Only file read during daily use
@@ -258,7 +268,7 @@ Quantum_Reality_Shift/
 
 ## Your Data
 
-All your personal files (`My_Foundation/`, `Entries/`, `Monthly_Summaries/`) stay local and are gitignored — they never leave your machine.
+Storage: all your personal files (`My_Foundation/`, `Entries/`, `Monthly_Summaries/`) live in the folder on your computer and are gitignored, so this repo never commits or uploads them. Processing: what you say to Claude and the files it reads are processed on Anthropic's servers under its [privacy policy](https://www.anthropic.com/legal/privacy) and your plan's terms — on Pro and Max, tasks may run in the cloud.
 
 During setup, Step 4 generates `system/MY_CONTEXT.md` — a ~500 word summary of your situation, goals, and tracking preferences. This is the only file Claude reads at the start of each daily session, so it doesn't need to re-read your entire foundation every time. Your full foundation files (`My_Journey_Context.md`, `My_Baseline.md`, `My_Vision.md`) are written once during onboarding and referenced through MY_CONTEXT.md going forward.
 
